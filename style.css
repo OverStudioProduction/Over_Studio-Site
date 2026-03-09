@@ -227,49 +227,6 @@ main{
   transform:translateY(0px);
 }
 
-/* ================= WORK ================= */
-
-.work{ padding-bottom:100px; }
-
-.cat{
-  padding:84px 0 36px;
-  border-top:1px solid var(--line);
-}
-
-.cat__head{
-  display:grid;
-  grid-template-columns: 1fr auto;
-  gap:16px;
-  align-items:end;
-  margin-bottom:18px;
-}
-
-.cat__head h2{
-  margin:0;
-  font-weight:600;
-  font-size:18px;
-  letter-spacing:.8px;
-  text-transform:uppercase;
-  color:var(--text);
-}
-
-.cat__head p{
-  margin:6px 0 0 0;
-  color:var(--muted);
-  font-size:13px;
-}
-
-.cat__hint{
-  color:rgba(250,248,244,.48);
-  font-size:12px;
-  letter-spacing:.4px;
-  white-space:nowrap;
-  align-self:center;
-  padding:8px 10px;
-  border-radius:999px;
-  border:1px solid rgba(255,255,255,.07);
-  background:rgba(255,255,255,.02);
-}
 
 /* ================= TRACK ================= */
 
