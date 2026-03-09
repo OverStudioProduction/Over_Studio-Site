@@ -278,7 +278,7 @@ main{
   display:flex;
   gap:18px;
   overflow-x:auto;
-  padding:12px 2px 34px;
+  padding:12px 6px 34px;
 
   scroll-snap-type:x mandatory;
   -webkit-overflow-scrolling:touch;
@@ -312,6 +312,29 @@ main{
 .track::-webkit-scrollbar-track{
   background:rgba(255,255,255,.04);
   border-radius:999px;
+}
+
+.track::before,
+.track::after{
+  content:"";
+  position:sticky;
+  top:0;
+  width:44px;
+  flex:0 0 44px;
+  z-index:3;
+  pointer-events:none;
+}
+
+.track::before{
+  left:0;
+  margin-right:-44px;
+  background:linear-gradient(90deg, rgba(12,8,7,1) 0%, rgba(12,8,7,0) 100%);
+}
+
+.track::after{
+  right:0;
+  margin-left:-44px;
+  background:linear-gradient(270deg, rgba(12,8,7,1) 0%, rgba(12,8,7,0) 100%);
 }
 
 /* ================= CARD ================= */
@@ -419,7 +442,7 @@ main{
 /* ================= COURT-MÉTRAGE = AFFICHES CINÉ ================= */
 
 #cat-absolute .track.track--posters{
-  padding:12px 2px 34px;
+  padding:12px 6px 34px;
 }
 
 #cat-absolute .track--posters .card{
@@ -678,5 +701,19 @@ main{
 
   #cat-absolute .track--posters .card{
     width:240px;
+  }
+
+  .track::before,
+  .track::after{
+    width:28px;
+    flex-basis:28px;
+  }
+
+  .track::before{
+    margin-right:-28px;
+  }
+
+  .track::after{
+    margin-left:-28px;
   }
 }
